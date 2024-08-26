@@ -9,7 +9,7 @@ CPPFLAGE = -Wall -Wextra -Werror -std=c++98
 all: $(NAME)
 
 $(NAME): $(OBJ)
-         $(CC) $(CPPFLAGE) $(OBJ) -o $(NAME)
+		$(CC) $(CPPFLAGE) $(OBJ) -o $(NAME)
 
 clean:
 		$(RM) $(OBJ)
@@ -19,6 +19,4 @@ fclean: clean
 
 re: fclean $(NAME)
 
-.PHONY all clean fclean re
-
-
+.PHONY: all, clean, fclean, re
