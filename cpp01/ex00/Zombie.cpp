@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 18:50:12 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/03 19:00:10 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/09/03 19:15:49 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ Zombie::Zombie(std::string name)
 }
 Zombie::~Zombie()
 {
-    std::cout << this->name << "destroyed" << std::endl;
+    std::cout << this->name << ": destroyed" << std::endl;
 }
