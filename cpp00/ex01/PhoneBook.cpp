@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 19:10:25 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/01 18:17:15 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/09/03 17:24:56 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ static Contact new_contact()
 
 void PhoneBook::add()
 {
+	if(added_contacts > 7)
+		std::cout << "Warning, overwriting the oldest info" << std::endl;
 	this->contacts[added_contacts % 8] = new_contact();
 	added_contacts++;
 }
