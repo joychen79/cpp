@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 17:13:59 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/21 19:25:13 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/09/21 19:31:48 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ ClapTrap::ClapTrap(std::string name)
     this->_hit = 10;
     this->_energy = 10;
     this->_damage = 0;
-    std::cout << "ClapTrap " << this->_name <<" Constructor Called!" << std::endl;
+    std::cout << "ClapTrap "<< this->_name <<" Constructor Called!" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &copy)
@@ -68,7 +68,7 @@ void ClapTrap::attack(const std::string &target)
     {
         if(this->_hit > amount)
         {
-            std::cout << "ClapTrap " <<this->_name << " was hit and has lost " << amount << " hit points!" << std::endl ;
+            std::cout << "ClapTrap "<< this->_name << " was hit and has lost " << amount << " hit points!" << std::endl ;
             this->_hit -= amount;
         }
         else
@@ -82,11 +82,11 @@ void ClapTrap::attack(const std::string &target)
  {
     if(this->_energy <= 0)
     {
-        std::cout << "ClapTrap " << this->_name << " doesn´t have enery points!" << std::endl;
+        std::cout <<"ClapTrap "<<  this->_name << " doesn´t have enery points!" << std::endl;
     }
     if((this->_energy-amount) >= 0)
     {
-        std::cout << "ClapTrap " << this->_name << " repairs itself receiving " << amount << " hit points back!" << std::endl;
+        std::cout << "ClapTrap "<< this->_name << " repairs itself receiving " << amount << " hit points back!" << std::endl;
         this->_energy -= amount;
         this->_hit += amount;
     }

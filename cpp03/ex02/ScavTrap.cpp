@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 17:20:32 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/21 19:26:27 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/09/21 18:29:21 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ ScavTrap::ScavTrap()
         :ClapTrap()
 {
     std::cout << "ScavTrap Default constructor called" << std::endl;
-    this->_name = "Default";
+    this->_name = "Unnamed";
     this->_hit = 100;
     this->_energy = 50;
     this->_damage = 20;
