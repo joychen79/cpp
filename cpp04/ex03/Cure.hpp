@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Cure.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/21 19:42:46 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/27 17:21:01 by jingchen         ###   ########.fr       */
+/*   Created: 2024/09/27 19:39:39 by jingchen          #+#    #+#             */
+/*   Updated: 2024/09/27 19:40:07 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-#define CAT_HPP
+#ifndef CURE_HPP
+#define CURE_HPP
 
-#include "Animal.hpp"
+#include <iostream>
+#include "AMateria.hpp"
+#include "ICharacter.hpp"
 
-class Cat : public Animal
+class Cure : public AMateria
 {
-    public:
-        Cat();
-        Cat(const Cat &copy);
-        Cat &operator=(const Cat &assigned);
-        ~Cat();
+public:
+	Cure();
+	Cure(const Cure &copy);
+	Cure &operator=(const Cure &assigned);
+	~Cure();
 
-        void makeSound() const;
+	Cure *clone() const;
+	void use(ICharacter &target);
 };
 
 #endif
