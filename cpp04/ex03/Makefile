@@ -6,7 +6,7 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/27 19:47:01 by jingchen          #+#    #+#              #
-#    Updated: 2024/09/27 19:48:34 by jingchen         ###   ########.fr        #
+#    Updated: 2024/09/29 13:53:20 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,9 +19,8 @@ SRC	=	main.cpp \
 		Ice.cpp
 OBJS			= $(SRC:.cpp=.o)
 
-# Compiler
 CXX				=	c++
-RM				=	rm -f
+
 CXXFLAGS		=	-Wall -Werror -Wextra -std=c++98 
 
 NAME			=	materia

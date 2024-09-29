@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 11:30:14 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/14 12:29:33 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/09/14 13:07:52 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,13 @@ class Fixed
         static  const int bits = 8;
     
     public:
+    // default constructor
         Fixed();
+    // copy constructor
         Fixed(const Fixed &other);
+    // copy assignment operator
         Fixed &operator = (const Fixed &other);
+    // destructor
         ~Fixed();
 
         Fixed(const int number);

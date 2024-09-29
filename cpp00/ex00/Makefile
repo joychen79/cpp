@@ -1,8 +1,8 @@
 NAME = megaphone
 SRC = megaphone.cpp
-OBJ 	= $(SRC:.cpp=.o)
+OBJ	= $(SRC:.cpp=.o)
 
-CC = g++
+CC = c++
 RM = rm -f
 CPPFLAGE = -Wall -Wextra -Werror -std=c++98
 

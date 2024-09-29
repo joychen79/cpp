@@ -6,7 +6,7 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/20 17:03:12 by jingchen          #+#    #+#              #
-#    Updated: 2024/09/21 18:42:49 by jingchen         ###   ########.fr        #
+#    Updated: 2024/09/29 13:52:05 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ OBJ = $(SRC:.cpp=.o)
 
 NAME = FragTrap
 
-CXX = g++
+CXX = c++
 
 CXXFLAGES = -Wall -Wextra -Werror -std=c++98
 

@@ -6,7 +6,7 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/07 16:49:30 by jingchen          #+#    #+#              #
-#    Updated: 2024/09/07 17:58:20 by jingchen         ###   ########.fr        #
+#    Updated: 2024/09/29 13:45:45 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ OBJ = $(SRC:.cpp=.o)
 
 NAME = zombie
 
-CXX = g++
+CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 

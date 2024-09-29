@@ -6,7 +6,7 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/07 18:07:55 by jingchen          #+#    #+#              #
-#    Updated: 2024/09/07 18:35:59 by jingchen         ###   ########.fr        #
+#    Updated: 2024/09/29 13:41:55 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ OBJ = $(SRC:.cpp=.o)
 
 NAME = brain
 
-CXX = g++
+CXX = c++
 
 CXXFLAGES = -Wall -Wextra -Werror -std=c++98
 

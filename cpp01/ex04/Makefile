@@ -6,7 +6,7 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/08 12:01:21 by jingchen          #+#    #+#              #
-#    Updated: 2024/09/08 12:39:01 by jingchen         ###   ########.fr        #
+#    Updated: 2024/09/29 13:42:06 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ OBJ = $(SRC:.cpp=.o)
 
 NAME = replacing
 
-CXX = g++
+CXX = c++
 
 CXXFLAGES = -Wall -Wextra -Werror -std=c++98
 

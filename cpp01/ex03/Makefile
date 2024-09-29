@@ -6,7 +6,7 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/07 18:53:04 by jingchen          #+#    #+#              #
-#    Updated: 2024/09/08 11:32:59 by jingchen         ###   ########.fr        #
+#    Updated: 2024/09/29 13:42:01 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ OBJ = $(SRC:.cpp=.o)
 
 NAME = Weapon
 
-CXX = g++
+CXX = c++
 
 CXXFLAGES = -Wall -Wextra -Werror -std=c++98
 

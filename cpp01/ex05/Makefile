@@ -6,7 +6,7 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/08 12:46:56 by jingchen          #+#    #+#              #
-#    Updated: 2024/09/08 13:40:56 by jingchen         ###   ########.fr        #
+#    Updated: 2024/09/29 13:42:10 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ OBJ = $(SRC:.cpp=.o)
 
 NAME = harl
 
-CXX = g++
+CXX = c++
 
 CXXFLAGES = -Wall -Wextra -Werror -std=c++98
 

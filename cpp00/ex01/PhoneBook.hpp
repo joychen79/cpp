@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 19:11:10 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/03 17:23:09 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/09/03 17:38:14 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,8 @@
 #include "Contact.hpp"
 #include <cctype>
 #include <iomanip>
-//#include <string>
-//#include <bits/stdc++.h>
 #include <cstdlib>
+#include <bits/stdc++.h>
 
 class PhoneBook
 {

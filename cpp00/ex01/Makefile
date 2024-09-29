@@ -6,11 +6,10 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/01 17:04:47 by jingchen          #+#    #+#              #
-#    Updated: 2024/09/01 18:26:18 by jingchen         ###   ########.fr        #
+#    Updated: 2024/09/01 18:24:07 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# CPP00-ex01
 NAME			=	phonebook
 
 SRC	=	PhoneBook.cpp \
