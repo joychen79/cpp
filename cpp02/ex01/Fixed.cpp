@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 11:30:18 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/27 17:32:52 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/10/05 10:33:56 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void Fixed::setRawBit(int const Raw)
 
 int Fixed::toInt(void) const
  {
-    return(this->val / (double)(1 << this->bits));
+    return(this->val >> this->bits);
  }
 
 std::ostream &operator<<(std::ostream &out, const Fixed &fixed)

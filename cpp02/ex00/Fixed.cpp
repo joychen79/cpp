@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/08 13:52:04 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/08 13:54:11 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/10/05 10:59:50 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Fixed::Fixed()
 {
-	std::cout << "Default constructor used" << std::endl;
+	std::cout << "Default constructor called" << std::endl;
 	this->val = 0;
 }
 

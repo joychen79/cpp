@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 13:20:59 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/14 13:37:28 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/10/05 10:33:36 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ float	Fixed::toFloat(void) const {
 
 int	Fixed::toInt(void) const {
 	//return (this->fixed_point >> this->fract_bits);
-    return this->val / (double)(1 << this->bits);
+    return (this->val >> this->bits);
 }
 
 /*---COMPARISON OPERATORS---*/
