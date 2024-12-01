@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 19:42:15 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/27 18:38:35 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/10/27 11:33:44 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int main()
 	// delete all animals in the list
 	for (int i = 0; i < 100; i++)
 		delete animalList[i];
+		
 	return 0;
 
 }

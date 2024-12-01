@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 19:42:24 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/24 18:25:55 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/01 11:44:54 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class WrongAnimal
         WrongAnimal &operator=(const WrongAnimal &assigned);
         virtual ~WrongAnimal();
     
-    virtual void makeSound() const;
+    void makeSound() const;
     std::string getType() const;
 };
 

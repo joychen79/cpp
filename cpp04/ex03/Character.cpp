@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 19:35:40 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/27 19:50:21 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/11/01 13:32:50 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ Character::Character()
 {
 	this->_name = "*Unnamed character*";
 	for (int i = 0; i < 4; i++)
-		this->_inventory[i] = NULL;
+		this->_equip[i] = NULL;
 	for (int i = 0; i < 1024; i++)
-		this->_ground[i] = NULL;
+		this->_unequip[i] = NULL;
 }
 
 Character::Character(const Character &copy)
@@ -34,17 +34,17 @@ Character &Character::operator=(const Character &assigned)
 		this->_name = assigned._name;
 		for (int i = 0; i < 4; i++)
 		{
-			if (assigned._inventory[i])
-				this->_inventory[i] = assigned._inventory[i]->clone();
+			if (assigned._equip[i])
+				this->_equip[i] = assigned._equip[i]->clone();
 			else
-				this->_inventory[i] = NULL;
+				this->_equip[i] = NULL;
 		}
 		for (int i = 0; i < 1024; i++)
 		{
-			if (assigned._ground[i])
-				this->_ground[i] = assigned._ground[i]->clone();
+			if (assigned._unequip[i])
+				this->_unequip[i] = assigned._unequip[i]->clone();
 			else
-				this->_ground[i] = NULL;
+				this->_unequip[i] = NULL;
 		}
 	}
 	return *this;
@@ -52,19 +52,19 @@ Character &Character::operator=(const Character &assigned)
 
 Character::~Character()
 {
-	for (int i = 0; i < 4 && this->_inventory[i]; i++)
-		delete this->_inventory[i];
-	for (int i = 0; i < 1024 && this->_ground[i]; i++)
-		delete this->_ground[i];
+	for (int i = 0; i < 4 && this->_equip[i]; i++)
+		delete this->_equip[i];
+	for (int i = 0; i < 1024 && this->_unequip[i]; i++)
+		delete this->_unequip[i];
 }
 
 Character::Character(std::string name)
 {
 	this->_name = name;
 	for (int i = 0; i < 4; i++)
-		this->_inventory[i] = NULL;
+		this->_equip[i] = NULL;
 	for (int i = 0; i < 1024; i++)
-		this->_ground[i] = NULL;
+		this->_unequip[i] = NULL;
 }
 
 std::string const &Character::getName() const
@@ -76,9 +76,9 @@ void Character::equip(AMateria *m)
 {
 	for (int i = 0; i < 4; i++)
 	{
-		if (this->_inventory[i] == NULL && m)
+		if (this->_equip[i] == NULL && m)
 		{
-			this->_inventory[i] = m->clone();
+			this->_equip[i] = m->clone();
 			break;
 		}
 	}
@@ -86,14 +86,14 @@ void Character::equip(AMateria *m)
 
 void Character::unequip(int idx)
 {
-	if (this->_inventory[idx] == NULL)
+	if (this->_equip[idx] == NULL)
 		return;
 	for (int i = 0; i < 1024; i++)
 	{
-		if (this->_ground[i] == NULL)
+		if (this->_unequip[i] == NULL)
 		{
-			this->_ground[i] = this->_inventory[idx];
-			this->_inventory[idx] = NULL;
+			this->_unequip[i] = this->_equip[idx];
+			this->_equip[idx] = NULL;
 			break;
 		}
 	}
@@ -101,8 +101,8 @@ void Character::unequip(int idx)
 
 void Character::use(int idx, ICharacter &target)
 {
-	if (this->_inventory[idx])
-		this->_inventory[idx]->use(target);
+	if (this->_equip[idx])
+		this->_equip[idx]->use(target);
 	else
 		std::cout << "Inventory slot empty..." << std::endl;
 }

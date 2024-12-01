@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 19:34:48 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/27 19:35:11 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/11/01 13:28:12 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ class Character : public ICharacter
 {
 private:
 	std::string _name;
-	AMateria *_inventory[4];
-	AMateria *_ground[1024];
+	AMateria *_equip[4];
+	AMateria *_unequip[1024];
 
 public:
 	Character();
