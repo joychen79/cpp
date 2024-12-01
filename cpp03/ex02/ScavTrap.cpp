@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 17:20:32 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/21 18:29:21 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:31:12 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ ScavTrap::~ScavTrap()
 ScavTrap::ScavTrap(std::string name) 
         : ClapTrap(name)
 {
-    std::cout << "ScavTRap" << this->_name << "constructor called" <<std::endl;  
+    std::cout << "ScavTRap " << this->_name << " constructor called" <<std::endl;  
     this->_hit = 100;
     this->_energy = 50;
     this->_damage = 20;  

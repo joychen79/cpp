@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 17:13:56 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/21 18:07:42 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:38:50 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main(void)
 {
-     /*  ClapTrap a = ClapTrap();
+    /*ClapTrap a = ClapTrap();
 	ClapTrap p = ClapTrap("P-body");
 
 	a.attack("P-body");

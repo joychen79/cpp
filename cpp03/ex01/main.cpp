@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 17:13:56 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/21 18:31:12 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:40:21 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int main(void)
 {
-	/*ClapTrap a = ClapTrap("ATLAS");
+	ClapTrap a = ClapTrap("ATLAS");
 	ScavTrap p = ScavTrap("P-body");
 
 	p.guardGate();
@@ -26,7 +26,7 @@ int main(void)
 	a.takeDamage(10);
 	a.attack("P-body");
 	p.beRepaired(1);
-	p.beRepaired(1);*/
+	p.beRepaired(1);
 
 	/*ScavTrap robot("Trap");
 
@@ -37,7 +37,7 @@ int main(void)
 	robot.beRepaired(40);
 	robot.guardGate();*/
 	
-	ScavTrap noOne = ScavTrap();
+	/*ScavTrap noOne = ScavTrap();
 	ScavTrap jim = ScavTrap("Jim");
 	ScavTrap jim2 = ScavTrap(jim);
 
@@ -48,7 +48,7 @@ int main(void)
 	jim2.attack("me");
 	jim2.guardGate();
 	noOne.guardGate();
-	jim.beRepaired(5);
+	jim.beRepaired(5);*/
 	
 	return (0);
 }

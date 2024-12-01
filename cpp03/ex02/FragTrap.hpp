@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 18:43:20 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/21 19:11:51 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:45:10 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class FragTrap : public ClapTrap
     //Creat another constructor with name;
         FragTrap(std::string name);
 
+        void attack(const std::string& target);
         void highFivesGuys(); 
 };
 

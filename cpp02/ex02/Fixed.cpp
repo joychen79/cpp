@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 13:20:59 by jingchen          #+#    #+#             */
-/*   Updated: 2024/10/05 10:33:36 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/10/05 11:06:55 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ Fixed::Fixed(void)
 
 Fixed::~Fixed(){}
 
-/*---COPY CONSTRUCTOR/ASSIGNMENT OPERATOR---*/
 
 Fixed::Fixed(const Fixed &other)
 {
@@ -33,7 +32,6 @@ Fixed &Fixed::operator=(const Fixed &other)
 	return (*this);
 }
 
-/*---CONSTRUCTORS---*/
 
 Fixed::Fixed(const int parameter){
 	this->val = parameter << this->bits;
@@ -43,7 +41,6 @@ Fixed::Fixed(const float number){
 	this->val = roundf(number * (1 << this->bits));
 }
 
-/*---GETER/SETER---*/
 
 int	Fixed::getRawBits(void) const
 {
@@ -55,20 +52,15 @@ void	Fixed::setRawBits(int const raw)
 	this->val = raw;
 }
 
-/*---FLOAT/INT---*/
-
 float	Fixed::toFloat(void) const {
-/*	float i = static_cast<float>(this->fixed_point) / static_cast<float>(1 << this->fract_bits);
-	return i;*/
+
     return this->val / (double)(1 << this->bits);
 }
 
 int	Fixed::toInt(void) const {
-	//return (this->fixed_point >> this->fract_bits);
     return (this->val >> this->bits);
 }
 
-/*---COMPARISON OPERATORS---*/
 
 bool	Fixed::operator<(const Fixed &other) const
 {
@@ -112,7 +104,6 @@ bool	Fixed::operator!=(const Fixed &other) const
 	return (false);
 }
 
-/*---ARITHMETIC OPERATORS---*/
 
 Fixed	Fixed::operator+(const Fixed &other)
 {
@@ -136,7 +127,6 @@ Fixed	Fixed::operator/(const Fixed &other)
 	return (Fixed(this->toFloat() / other.toFloat()));
 }
 
-/*--INCREMENT/DECREMENT---*/
 Fixed	Fixed::operator++()
 {
 	this->val++;
@@ -163,7 +153,6 @@ Fixed	Fixed::operator--(int)
 	return (copy);
 }
 
-/*---MIN/MAX---*/
 
 Fixed	&Fixed::min(Fixed &ref_1, Fixed &ref_2)
 {
@@ -194,12 +183,8 @@ const Fixed	&Fixed::max(const Fixed &ref_1, const Fixed &ref_2)
 }
 
 
-/*---COPY ASSIGNMENT---*/
-
 std::ostream &operator<<(std::ostream& out, const Fixed& fixed)
 {
 	out << fixed.toFloat();
 	return (out);
 }
-
-/*---------------------------------------------------------------------*/

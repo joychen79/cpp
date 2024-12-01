@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 17:13:59 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/21 19:30:54 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:37:23 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,35 +51,7 @@ ClapTrap::~ClapTrap()
 {
     std::cout << "ClapTrap Destructor called" << std::endl;
 }
-/*void ClapTrap::attack(const std::string &target)
-{
-    if(!this->_hit)
-        std::cout << "ClapTrap " << this->_name << " can't attack because it is down." << std::endl;
-    else if(!this->_energy)
-        std::cout << "ClapTrap " << this->_name << " can't attack because it is down." << std::endl;
-    else if(this->_energy > 0 && this->_hit >0)
-    {
-        std::cout << this->_name << " attacks " << target << ", causing " << this->_damage << " point lost!" << std::endl ;
-        this->_energy--;
-    }
-}
 
- void ClapTrap::takeDamage(unsigned int amount)
- {
-    std::cout << this->_name << " was hit and has lost " << amount << " hit points!" << std::endl ;
-    this->_hit -= amount;
- }
- 
- void ClapTrap::beRepaired(unsigned int amount)
- {
-    if(this->_energy > 0 && this->_hit >0)
-    {
-        std::cout << this->_name << " repairs itself receiving " << amount << " hit points back!" << std::endl;
-        this->_energy--;
-        this->_hit += amount;
-    }
- }
-*/
 void ClapTrap::attack(const std::string &target)
 {
     if(this->_energy > 0 && this->_hit >0)

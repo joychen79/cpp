@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 17:13:56 by jingchen          #+#    #+#             */
-/*   Updated: 2024/09/21 19:33:19 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:48:31 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@
 int main(void)
 {
 	
-	/*FragTrap robot("Trap");
+	FragTrap robot("Trap");
 
 	robot.attack("Clap");
 	robot.attack("Clap");
 	robot.attack("Clap");
 	robot.takeDamage(2);
 	robot.beRepaired(1);
-	robot.highFivesGuys();*/
+	robot.highFivesGuys();
 
-	FragTrap a = FragTrap("ATLAS");
+	/*FragTrap a = FragTrap("ATLAS");
 	ScavTrap p = ScavTrap("P-body");
 
 	p.guardGate();
@@ -39,7 +39,7 @@ int main(void)
 	p.takeDamage(30);
 	a.attack("P-body");
 	p.takeDamage(30);
-	a.highFivesGuys();
+	a.highFivesGuys();*/
 
 	return (0);
 }
