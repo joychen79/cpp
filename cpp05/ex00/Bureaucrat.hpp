@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 12:12:31 by jingchen          #+#    #+#             */
-/*   Updated: 2024/12/27 15:06:52 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/27 15:42:26 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,6 @@ class Bureaucrat
         };
     
 };
-    std::ostream &operator<<(std::ostream & out, const Bureaucrat& assign);
+    std::ostream &operator<<(std::ostream & out, const Bureaucrat& bureaucrat);
     
 #endif

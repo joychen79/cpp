@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 13:25:02 by jingchen          #+#    #+#             */
-/*   Updated: 2024/12/27 15:10:48 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/27 15:42:51 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,8 +77,8 @@ const char *Bureaucrat::GradeTooLowException::what() const throw()
     return("Grade Low High Exception");
 }
 
-std::ostream &operator<<(std::ostream& out, const Bureaucrat& assign)
+std::ostream &operator<<(std::ostream& out, const Bureaucrat& bureaucrat)
 {
-    out << assign.getName() << ", bureaucrat grade " << assign.getGrade() << ".";
+    out << bureaucrat.getName() << ", bureaucrat grade " << bureaucrat.getGrade() << ".";
 	return out;
 }
