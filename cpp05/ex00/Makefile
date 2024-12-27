@@ -6,16 +6,16 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/27 13:25:08 by jingchen          #+#    #+#              #
-#    Updated: 2024/12/27 14:58:07 by jingchen         ###   ########.fr        #
+#    Updated: 2024/12/27 15:18:06 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC = Bureaucrat.cpp \
-		main.cpp \
+		main.cpp 
 
 OBJ = $(SRC:.cpp=.o)
 
-NAME = Bureaucrat
+NAME = bureaucrat
 
 CXX = c++
 

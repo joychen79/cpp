@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 13:25:02 by jingchen          #+#    #+#             */
-/*   Updated: 2024/12/27 14:44:56 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/27 15:10:48 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ Bureaucrat &Bureaucrat::operator=(const Bureaucrat &assign)
 
 Bureaucrat::~Bureaucrat(){}
 
-Bureaucrat::Bureaucrat(std::string name, int grade) : name(_name)
+Bureaucrat::Bureaucrat(std::string name, int grade) : _name(name)
 {
     if(grade > 150)
             throw GradeTooHighException();
@@ -67,18 +67,18 @@ void Bureaucrat::DecrementGrade()
     this->_grade++;
 }
 
-const char *Bureaucrat::GradeTooHighException::what() const throw
+const char *Bureaucrat::GradeTooHighException::what() const throw()
 {
     return("Grade Too High Exception");
 }
 
-const char *Bureaucrat::GradeTooLowException::what() const throw
+const char *Bureaucrat::GradeTooLowException::what() const throw()
 {
     return("Grade Low High Exception");
 }
 
 std::ostream &operator<<(std::ostream& out, const Bureaucrat& assign)
 {
-    out << bureaucrat.getName() << ", bureaucrat grade " << bureaucrat.getGrade() << ".";
+    out << assign.getName() << ", bureaucrat grade " << assign.getGrade() << ".";
 	return out;
 }
