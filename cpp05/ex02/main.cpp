@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 13:25:05 by jingchen          #+#    #+#             */
-/*   Updated: 2024/12/30 13:22:01 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/30 14:04:09 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main()
 	std::cout << "************ RobotomyRequestForm\n";
 	try
 	{
-		Bureaucrat bob(10, "bob");
+		Bureaucrat bob("bob", 10);
 		RobotomyRequestForm a("Robotomy");
 		std::cout << bob << std::endl;
 		std::cout << a << std::endl;
@@ -41,7 +41,7 @@ int main()
 	std::cout << "************ PresidentialPardonForm\n";
 	try
 	{
-		Bureaucrat bob(5, "bob");
+		Bureaucrat bob("bob", 5);
 		PresidentialPardonForm a("Presidential");
 		std::cout << bob << std::endl;
 		std::cout << a << std::endl;
@@ -56,7 +56,7 @@ int main()
 	std::cout << "************ ShrubberyCreationForm\n";
 	try
 	{
-		Bureaucrat bob(5, "bob");
+		Bureaucrat bob("bob", 5);
 		ShrubberyCreationForm a("Shrubbery");
 		std::cout << bob << std::endl;
 		std::cout << a << std::endl;

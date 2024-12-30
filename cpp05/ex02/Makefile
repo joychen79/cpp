@@ -6,14 +6,14 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/27 13:25:08 by jingchen          #+#    #+#              #
-#    Updated: 2024/12/30 13:23:30 by jingchen         ###   ########.fr        #
+#    Updated: 2024/12/30 14:02:20 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC = Bureaucrat.cpp \
 		AForm.cpp \
 		ShrubberyCreationForm.cpp \
-		PresidentalPardonForm.cpp \
+		PresidentialPardonForm.cpp \
 		RobotomyRequestForm.cpp \
 		main.cpp \
 

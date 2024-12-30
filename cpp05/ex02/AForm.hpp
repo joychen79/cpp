@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 16:31:27 by jingchen          #+#    #+#             */
-/*   Updated: 2024/12/30 12:11:15 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:27:18 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ class AForm
             int         getExecute() const;
 
             void    beSigned(Bureaucrat &bureaucrat);
-            virtual void execute(Bureaucrat const & executor) const = 0
+            virtual void execute(Bureaucrat const & executor) const = 0;
 
             class GradeTooHighException : public std::exception
             {

@@ -6,13 +6,14 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 12:47:43 by jingchen          #+#    #+#             */
-/*   Updated: 2024/12/30 13:21:30 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/30 14:01:53 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ShrubberyCreationForm.hpp"
+#include <fstream>
 
-ShrubberyCreationForm::ShrubberyCreationForm() : AForm("ShrubberyCreationForm", 145, 137), target("No target")
+ShrubberyCreationForm::ShrubberyCreationForm() : AForm("ShrubberyCreationForm", 145, 137), _target("No target")
 {};
 
 ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &copy) : AForm("ShrubberyCreationForm", 145, 137)
@@ -37,17 +38,22 @@ void	ShrubberyCreationForm::execute(Bureaucrat const &executor) const
 	if (!this->getSigned())
 		throw Bureaucrat::FormNotSigned();
 	if (executor.getGrade() > this->getExecute())
-		throw Bureaucrat::GradeTooLowExecute();
-	std::ofstream	file(this->_target + "_shrubbery");
-	if (!file.is_open())
+		throw Bureaucrat::GradeTooLowToExecute();
+	//std::ofstream	out_file(this->_target + "_shrubbery");
+    /*std::string fileName = this->target + "_shrubbery";
+	std::ofstream out_file(fileName,std::ios::out | std::ios::app);*/
+
+    std::ofstream out_file;
+    out_file.open((this->_target + "_shrubbery").c_str());
+	if (!out_file.is_open())
 		throw NotOpenFile();
-	file << "   *   " << std::endl;
-	file << "  ***  " << std::endl;
-	file << " ***** " << std::endl;
-	file << "*******" << std::endl;
-	file << "   *   " << std::endl;
-	file << "   *   " << std::endl;
-	file.close();
+	out_file << "   *   " << std::endl;
+	out_file << "  ***  " << std::endl;
+	out_file << " ***** " << std::endl;
+	out_file << "*******" << std::endl;
+	out_file << "   *   " << std::endl;
+	out_file << "   *   " << std::endl;
+	out_file.close();
 }
 
 const char* ShrubberyCreationForm::NotOpenFile::what() const throw()

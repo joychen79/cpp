@@ -6,17 +6,17 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 12:47:30 by jingchen          #+#    #+#             */
-/*   Updated: 2024/12/30 13:14:03 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/30 14:02:34 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PresidentialPardonForm.hpp"
 
-PresidentialPardonForm::PresidentialPardonForm() : AForm("PresidentialPardonForm", 25, 5), target("No target"){};
+PresidentialPardonForm::PresidentialPardonForm() : AForm("PresidentialPardonForm", 25, 5), _target("No target"){};
 
 PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &copy) : AForm("PresidentialPardonForm", 25, 5)
 {
-	*this = other;
+	*this = copy;
 }
 PresidentialPardonForm	&PresidentialPardonForm::operator=(const PresidentialPardonForm &assign)
 {

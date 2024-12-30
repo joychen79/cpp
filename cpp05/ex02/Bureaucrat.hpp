@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 12:12:31 by jingchen          #+#    #+#             */
-/*   Updated: 2024/12/30 12:15:30 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:27:37 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ class Bureaucrat
         void    IncrementGrade();
         void    DecrementGrade();
         void    signForm(AForm &form);
-        void    executeForm(const AForm $form);
+        void    executeForm(const AForm &form);
 
         class GradeTooHighException : public std::exception
         {
@@ -55,17 +55,17 @@ class Bureaucrat
         class FormNotSigned : public std::exception
         {
             const char * what() const throw();
-        }
+        };
 
-        class FormNotExecute: public std::exception
+        class FormNotExecuted: public std::exception
         {
             const char * what() const throw();
-        }
+        };
 
           class GradeTooLowToExecute: public std::exception
         {
             const char * what() const throw();
-        }
+        };
     
 };
     std::ostream &operator<<(std::ostream & out, const Bureaucrat& bureaucrat);

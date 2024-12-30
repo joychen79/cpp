@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 12:47:46 by jingchen          #+#    #+#             */
-/*   Updated: 2024/12/30 13:00:48 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:27:59 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <iostream>
 # include "AForm.hpp"
-# include <ftream>
+# include <fstream>
 
 class ShrubberyCreationForm : public AForm
 {

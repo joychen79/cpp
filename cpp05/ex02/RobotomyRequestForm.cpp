@@ -6,13 +6,13 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 12:47:37 by jingchen          #+#    #+#             */
-/*   Updated: 2024/12/30 13:19:28 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:29:02 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RobotomyRequestForm.hpp"
 
-RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", 75, 42), target("No target")
+RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", 75, 42), _target("No target")
 {};
 
 

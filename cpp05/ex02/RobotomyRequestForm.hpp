@@ -6,12 +6,12 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 12:47:40 by jingchen          #+#    #+#             */
-/*   Updated: 2024/12/30 13:03:58 by jingchen         ###   ########.fr       */
+/*   Updated: 2024/12/30 14:02:50 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ROBOTOMY_REQUEST_FORM_HPP
-#define ROBOTOMY_REQUEST_FORM
+#define ROBOTOMY_REQUEST_FORM_HPP
 
 # include <iostream>
 # include "AForm.hpp"
