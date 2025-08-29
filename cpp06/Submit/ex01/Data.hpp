@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   A.hpp                                              :+:      :+:    :+:   */
+/*   Data.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/23 19:03:44 by jingchen          #+#    #+#             */
-/*   Updated: 2025/08/29 18:33:49 by jingchen         ###   ########.fr       */
+/*   Created: 2025/08/23 18:08:04 by jingchen          #+#    #+#             */
+/*   Updated: 2025/08/23 18:08:08 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef A_HPP
-#define A_HPP
+#ifndef DATA_HPP
+#define DATA_HPP
 
-#include "Base.hpp"
 #include <iostream>
 
-class A : public Base
+class Data
 {
-public:
-    void identify() const { std::cout << "A" << std::endl; }
+	private:
+		int	members;
+
+	public:
+		Data();
+		~Data();
+
+		Data(const Data &other);
+		Data &operator=(const Data &other);
+
+		Data(int _members);
+
+		int getMembers() const { return members; }
 };
 
 #endif
