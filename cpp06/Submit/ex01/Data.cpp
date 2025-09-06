@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/23 18:09:56 by jingchen          #+#    #+#             */
-/*   Updated: 2025/08/23 18:09:58 by jingchen         ###   ########.fr       */
+/*   Updated: 2025/09/06 18:11:27 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,8 @@ Data &Data::operator=(const Data &other)
 }
 
 Data::Data(int _members) : members(_members) {}
+
+int Data::getMembers() const
+{
+    return members;
+}

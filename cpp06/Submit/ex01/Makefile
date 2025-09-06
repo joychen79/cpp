@@ -6,7 +6,7 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/23 18:07:30 by jingchen          #+#    #+#              #
-#    Updated: 2025/08/29 18:17:17 by jingchen         ###   ########.fr        #
+#    Updated: 2025/09/06 18:43:22 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,9 +16,9 @@ SRC = main.cpp \
 
 OBJ = $(SRC:.cpp=.o)
 
-NAME = convert
+NAME = serializer
 
-CXX = g++
+CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
 all: $(NAME)

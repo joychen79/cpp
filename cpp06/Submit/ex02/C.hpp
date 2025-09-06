@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/23 19:21:11 by jingchen          #+#    #+#             */
-/*   Updated: 2025/08/29 18:33:39 by jingchen         ###   ########.fr       */
+/*   Updated: 2025/09/06 18:19:49 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,7 @@
 #define C_HPP
 
 #include "Base.hpp"
-#include <iostream>
 
-class C : public Base
-{
-public:
-    void identify() const { std::cout << "C" << std::endl; }
-};
+class C : public Base {};
 
 #endif

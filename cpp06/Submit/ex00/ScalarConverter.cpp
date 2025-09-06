@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/23 17:32:05 by jingchen          #+#    #+#             */
-/*   Updated: 2025/08/29 18:09:23 by jingchen         ###   ########.fr       */
+/*   Updated: 2025/09/06 18:39:27 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <cstdlib>
 #include <cctype>
 #include <limits>
+
 
 static bool isCharLiteral(const std::string &literal)
 {
@@ -117,7 +118,7 @@ void ScalarConverter::convert(const std::string &literal)
 {
     if (literal.empty())
     {
-        std::cerr << "Error: empty input.\n";
+        std::cout << "Error: empty input.\n";
         return;
     }
     if (isCharLiteral(literal))
@@ -134,13 +135,13 @@ void ScalarConverter::convert(const std::string &literal)
         return;
     if (!isValidNumber(literal))
     {
-        std::cerr << "Error: Your input is not a valid number.\n";
+        std::cout << "Error: Your input is not a valid number.\n";
         return;
     }
     long lval = std::atol(literal.c_str());
     if (lval > std::numeric_limits<int>::max() || lval < std::numeric_limits<int>::min())
     {
-        std::cerr << "Error: Input exceeds int range.\n";
+        std::cout << "Error: Input exceeds int range.\n";
         return;
     }
 

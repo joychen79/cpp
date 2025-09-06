@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/23 18:08:04 by jingchen          #+#    #+#             */
-/*   Updated: 2025/08/23 18:08:08 by jingchen         ###   ########.fr       */
+/*   Updated: 2025/09/06 18:22:59 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class Data
 
 		Data(int _members);
 
-		int getMembers() const { return members; }
+		int getMembers() const;
 };
 
 #endif

@@ -6,7 +6,7 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/23 19:21:23 by jingchen          #+#    #+#              #
-#    Updated: 2025/08/29 18:17:34 by jingchen         ###   ########.fr        #
+#    Updated: 2025/09/06 18:47:11 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ SRC = main.cpp \
 
 OBJ = $(SRC:.cpp=.o)
 
-NAME = convert
+NAME = identify
 
 CXX = c++
 

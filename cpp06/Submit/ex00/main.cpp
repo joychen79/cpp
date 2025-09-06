@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/23 17:30:46 by jingchen          #+#    #+#             */
-/*   Updated: 2025/08/29 17:51:31 by jingchen         ###   ########.fr       */
+/*   Updated: 2025/09/06 18:33:36 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 {
     if (argc < 2)
     {
-        std::cerr << "Usage: ./Convert <literal1> [literal2 ...]\n";
+        std::cout << "Usage: ./Convert <literal1> [literal2 ...]\n";
         return 1;
     }
 
