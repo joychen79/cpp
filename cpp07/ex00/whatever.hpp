@@ -6,12 +6,12 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 19:18:22 by jingchen          #+#    #+#             */
-/*   Updated: 2025/08/29 19:18:25 by jingchen         ###   ########.fr       */
+/*   Updated: 2025/09/13 15:19:03 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WHATEVER_HPP_
-#define WHATEVER_HPP_
+#ifndef WHATEVER_HPP
+#define WHATEVER_HPP
 
 #include <iostream>
 
@@ -24,7 +24,7 @@ void swap(T &a, T &b)
 }
 
 template<typename T>
-T min(T &a, T &b)
+const T& min(const T &a, const T &b)
 {
 	if (a < b)
 		return a;
@@ -32,7 +32,7 @@ T min(T &a, T &b)
 }
 
 template<typename T>
-T max(T &a, T &b)
+const T& max(const T &a, const T &b)
 {
 	if (a > b)
 		return a;

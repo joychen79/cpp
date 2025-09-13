@@ -6,16 +6,17 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 19:31:42 by jingchen          #+#    #+#             */
-/*   Updated: 2025/08/29 19:36:44 by jingchen         ###   ########.fr       */
+/*   Updated: 2025/09/13 17:31:12 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
 #include <iostream>
+#include <cstdlib> 
+#include <ctime>
 
 int main(void)
 {
-	//atexit(leaks);
 	{
 		Array<int> intArray(5);
 

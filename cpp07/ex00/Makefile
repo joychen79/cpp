@@ -6,15 +6,15 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/29 19:18:00 by jingchen          #+#    #+#              #
-#    Updated: 2025/08/29 19:19:30 by jingchen         ###   ########.fr        #
+#    Updated: 2025/09/13 15:56:13 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = main.cpp \
+SRC = main.cpp 
 
 OBJ = $(SRC:.cpp=.o)
 
-NAME = Swap
+NAME = swap
 
 CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
@@ -31,4 +31,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re

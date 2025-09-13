@@ -6,11 +6,11 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/29 19:26:26 by jingchen          #+#    #+#              #
-#    Updated: 2025/08/29 19:29:16 by jingchen         ###   ########.fr        #
+#    Updated: 2025/09/13 16:00:09 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = main.cpp \
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -31,4 +31,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re
