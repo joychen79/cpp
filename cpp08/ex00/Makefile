@@ -6,11 +6,12 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/29 19:41:10 by jingchen          #+#    #+#              #
-#    Updated: 2025/10/24 15:44:16 by jingchen         ###   ########.fr        #
+#    Updated: 2025/10/24 16:53:10 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = main.cpp
+SRC = easyfind.cpp\
+	main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
