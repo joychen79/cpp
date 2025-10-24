@@ -6,18 +6,18 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/29 19:41:17 by jingchen          #+#    #+#              #
-#    Updated: 2025/08/29 19:45:46 by jingchen         ###   ########.fr        #
+#    Updated: 2025/09/13 19:27:08 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC = main.cpp \
-	  Span.cpp \
+	  Span.cpp 
 
 OBJ = $(SRC:.cpp=.o)
 
 NAME = span
 
-CXX = g++
+CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 all: $(NAME)
 
@@ -32,4 +32,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re

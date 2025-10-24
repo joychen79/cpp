@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 19:41:23 by jingchen          #+#    #+#             */
-/*   Updated: 2025/08/29 19:43:16 by jingchen         ###   ########.fr       */
+/*   Updated: 2025/10/24 15:38:00 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,44 +15,45 @@
 
 #include <iostream>
 #include <vector>
-#include <iterator>
-#include <limits>
 #include <algorithm>
-#include <time.h>
-#include <numeric>
+#include <exception>
 
 class Span
 {
 private:
-	unsigned int size;
-	std::vector<int> v;
-	Span();
+    unsigned int size;
+    std::vector<int> v;
+    Span(); // 禁用默认构造函数
 
 public:
-	Span(unsigned int N);
-	Span(const Span &copy);
-	Span &operator=(const Span &assign);
-	~Span();
+    // 正统 Canonical Form
+    Span(unsigned int N);
+    Span(const Span &copy);
+    Span &operator=(const Span &assign);
+    ~Span();
 
-	void addNumber(int newNum);
-	void addNumbers(std::vector<int> vector);
+    // 添加数字
+    void addNumber(int newNum);
+    void addNumbers(const std::vector<int> &vector); // 改为引用避免拷贝
 
-	int shortestSpan();
-	int longestSpan();
+    // 计算跨度
+    int shortestSpan() const;
+    int longestSpan() const;
 
-	void print();
+    void print() const;
 
-	class SpanFullExpection : public std::exception
-	{
-	public:
-		const char *chat() const throw();
-	};
+    // 异常类
+    class SpanFullException : public std::exception
+    {
+    public:
+        const char *what() const throw();
+    };
 
-	class SpanTooSmallException : public std::exception
-	{
-	public:
-		const char *chat() const throw();
-	};
+    class SpanTooSmallException : public std::exception
+    {
+    public:
+        const char *what() const throw();
+    };
 };
 
 #endif

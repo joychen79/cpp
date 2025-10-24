@@ -6,27 +6,29 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 19:41:14 by jingchen          #+#    #+#             */
-/*   Updated: 2025/08/29 19:42:47 by jingchen         ###   ########.fr       */
+/*   Updated: 2025/10/24 15:42:41 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <iostream>
+#include <vector>
+#include <cstdlib>
+#include <ctime>
 #include "Span.hpp"
 
 int main()
 {
-	int len = 50000;
+    int len = 10000; 
+    Span sp(len);
 
-	Span sp = Span(len);
-	srand(time(NULL));
-	for (int i = 0; i < len; i++)
-	{
-		int rnd = rand() % 100;
-		sp.addNumber(rnd);
-	}
-	sp.print();
-	std::cout << "Longest Span: " << sp.longestSpan() << std::endl;
-	std::cout << "Shortest Span: " << sp.shortestSpan() << std::endl;
-	return 0;
+    srand(time(NULL));
+    for (int i = 0; i < len; i++)
+    {
+        int rnd = rand() % 10000;
+        sp.addNumber(rnd);
+    }
+
+    std::cout << "Longest Span: " << sp.longestSpan() << std::endl;
+    std::cout << "Shortest Span: " << sp.shortestSpan() << std::endl;
+
+    return 0;
 }

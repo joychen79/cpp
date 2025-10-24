@@ -6,17 +6,17 @@
 #    By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/29 19:41:30 by jingchen          #+#    #+#              #
-#    Updated: 2025/08/29 19:46:03 by jingchen         ###   ########.fr        #
+#    Updated: 2025/10/24 15:44:02 by jingchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = main.cpp \
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
 NAME = MutantStack
 
-CXX = g++
+CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 all: $(NAME)
 
@@ -31,4 +31,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re

@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 19:41:08 by jingchen          #+#    #+#             */
-/*   Updated: 2025/08/29 19:42:22 by jingchen         ###   ########.fr       */
+/*   Updated: 2025/10/24 15:36:40 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,34 +16,27 @@
 
 int main()
 {
-	std::vector<int> v;
-	v.push_back(6);
-	v.push_back(9);
-	v.push_back(-7);
-	v.push_back(0);
-	try
-	{
-		easyfind(v, 1);
-	}
-	catch (std::exception &e)
-	{
-		std::cerr << e.what() << std::endl;
-	}
-	try
-	{
-		easyfind(v, 9);
-	}
-	catch (const std::exception &e)
-	{
-		std::cerr << e.what() << std::endl;
-	}
-	try
-	{
-		easyfind(v, -7);
-	}
-	catch (const std::exception &e)
-	{
-		std::cerr << e.what() << std::endl;
-	}
-	return 0;
+    std::vector<int> v;
+    v.push_back(6);
+    v.push_back(9);
+    v.push_back(-7);
+    v.push_back(0);
+	v.push_back(-1123);
+
+    int testValues[] = {1, 9, -7,-1123};
+
+    for (int i = 0; i < 4; ++i)
+    {
+        try
+        {
+            std::vector<int>::iterator it = easyfind(v, testValues[i]);
+            std::cout << "Element '" << *it << "' found!" << std::endl;
+        }
+        catch (const std::exception &e)
+        {
+            std::cerr << e.what() << std::endl;
+        }
+    }
+
+    return 0;
 }
